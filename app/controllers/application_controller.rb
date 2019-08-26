@@ -32,7 +32,7 @@ class ApplicationController < Sinatra::Base
   
   get '/articles/:id/edit' do 
     
-    
+    @article = Article
   
   
 end
