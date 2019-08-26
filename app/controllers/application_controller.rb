@@ -17,6 +17,9 @@ class ApplicationController < Sinatra::Base
   end 
   
   
+  get '/articels' do 
+    @articles = 
+  
    get '/articles/:id' do
     @article = Article.find(params[:id])
 
