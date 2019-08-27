@@ -49,8 +49,13 @@ class ApplicationController < Sinatra::Base
   end
 
   delete '/articles/:id' do
-    Article.destroy(params[:id])
-    redirect to '/articles'
+    
+  @article = Article.find(params[:id])
+  
+  @article.destroy 
+
+  erb :'/articles'
+end
   end
   
   
