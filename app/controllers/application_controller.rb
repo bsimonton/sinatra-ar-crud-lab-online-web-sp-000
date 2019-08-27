@@ -50,7 +50,7 @@ class ApplicationController < Sinatra::Base
 
  
 
-delete '/articles/:id' do 
+delete '/articles/:id/delete' do 
   
 end
 
