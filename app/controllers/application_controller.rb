@@ -18,6 +18,8 @@ class ApplicationController < Sinatra::Base
   end 
   
   
+  
+  
   get '/articles' do 
     @articles = Article.all
     
